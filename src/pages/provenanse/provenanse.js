@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function provenanse() {
-  return (
-    <div>provenanse</div>
-  )
+function ProvenansE() {
+  return <div>Provenanse</div>;
 }
 
-export default provenanse
+export default ProvenansE;

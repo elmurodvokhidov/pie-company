@@ -1,12 +1,16 @@
-import { Route, Router, RouterProvider, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Home from "./pages/home/Home";
-import about from './pages/about page/about'
-import Navbar from './navbar/navbar'
-import yummyPage from './pages/yummyPage/yummyPage'
-import provenanse from './pages/provenanse/provenanse'
-import getInTouch from './pages/getInTouch/getInTouch'
+
+import Navbar from "./navbar/navbar";
+
 import Footer from "./footer/Footer";
+
+import YummyPage from "./pages/yummyPage/YummyPage";
+
+import GetTouch from "./pages/getInTouch/GetTouch";
+import AbouT from "./pages/about page/AbouT";
+import ProvenansE from "./pages/provenanse/ProvenansE";
 
 function App() {
   return (
@@ -14,15 +18,14 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<about />} />
-        <Route path="yummyPage" element={<yummyPage />}>
-          <Route path="provenanse" element={<provenanse />} />
-          <Route path="getInTouch" element={<getInTouch />} />
-        </Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/YummyPage" element={<YummyPage />}></Route>
+        <Route path="/AbouT" element={<AbouT />}></Route>
+        <Route path="/GetTouch" element={<GetTouch />}></Route>
+        <Route path="/ProvenansE" element={<ProvenansE />}></Route>
       </Routes>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }
