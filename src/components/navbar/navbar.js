@@ -1,9 +1,16 @@
-import React from 'react'
-
-function navbar() {
+import React from "react";
+import style from "./Navbar.module.css";
+import { Link, NavLink } from "react-router-dom";
+function Navbar() {
   return (
-    <div>navbar</div>
-  )
+    <>
+      <div className={style.container}>
+        <div className={style.nav_box}>
+          <NavLink to="/">Yummy Pies</NavLink>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default navbar
+export default Navbar;
