@@ -1,29 +1,29 @@
-import { Route, Router, RouterProvider } from "react-router-dom";
-import Footer from "./components/footer/Footer";
-import about from './pages/about page/about';
-import getInTouch from './pages/getInTouch/getInTouch'
-import RootLayout from "./layout/RootLayout";
+import { Route, Router, RouterProvider, Routes } from "react-router-dom";
+
 import Home from "./pages/home/Home";
-import provenanse from './pages/provenanse/provenanse'
+import about from './pages/about page/about'
+import Navbar from './navbar/navbar'
 import yummyPage from './pages/yummyPage/yummyPage'
+import provenanse from './pages/provenanse/provenanse'
+import getInTouch from './pages/getInTouch/getInTouch'
+import Footer from "./footer/Footer";
 
 function App() {
   return (
-    <>
-      const router = createBrowserRouter(createRoutesFromElements(
-      <Route element={<RootLayout />}>
-        <Route index element={<Home />} />
-        <Route path="aboutPage" element={<about />} />
-        <Route path="likes" element={<getInTouch />} />
-        <Route path="basket" element={<provenanse />} />
-        <Route path="profile" element={<yummyPage/>} />
-      </Route>
-      )); return (
-      <div className="App">
-        <RouterProvider router={Router} />
-      </div>
-      );
-    </>
+    <div className="App">
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<about />} />
+        <Route path="yummyPage" element={<yummyPage />}>
+          <Route path="provenanse" element={<provenanse />} />
+          <Route path="getInTouch" element={<getInTouch />} />
+        </Route>
+      </Routes>
+
+      <Footer/>
+    </div>
   );
 }
 
