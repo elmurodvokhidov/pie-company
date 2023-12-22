@@ -3,3 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+a:active{
+    color: #E99A3F;
+}
