@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,100;0,200;1,100;1,200;1,300&family=Roboto+Slab:wght@100;200;300;400;500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.navbar{
+    background: black; 
+    font-family: "Robot Slab", serif;
+}
+.navbar1{
+    display: flex;
+    gap: 50px;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 100px 155px;
+}
+
+.navbarLeft h1{
+    font-size: 43px;
+    font-weight: 800;
+    margin: 0 0 5px 170px;
+    color: white;
+}
+
+.navbarLeft h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 170px;
+    color: #E99A41;
+}
+
+.navbarLeft h5{
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 800;
+    color: grey;
+    width: 530px;
+    background-color: #ffffff3f;
+    margin: 0 0 35px 170px;
+}
+
+.navbarLeft h6{
+    color: #E99A41;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0 0 5px 170px;
+};
+
+.navbarLeft h5{
+    color: white;
+}
+
+.about img{
+    width: 160px;
+    height: 190px;
+}
+
+.text h3{
+    font-size: 19px;
+    margin: 0 0 0 25px;
+}
+
+.text h4{
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 25px;
+    margin: 0 0 0 25px;
+    color: white;
+}

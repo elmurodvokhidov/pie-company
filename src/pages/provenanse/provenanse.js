@@ -1,7 +1,12 @@
 import React from "react";
+import { NavbarCard } from "../../components/assets/cards/Cards";
 
-function ProvenansE() {
-  return <div>Provenanse</div>;
+function Provenanse() {
+  return (
+  <div>
+    <NavbarCard/>
+  </div>
+  )
 }
 
-export default ProvenansE;
+export default Provenanse;

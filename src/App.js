@@ -1,27 +1,28 @@
-import { Route, Routes } from "react-router-dom";
-import Home from "./pages/home/Home";
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
-import YummyPage from "./pages/yummyPage/yummyPage";
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
+import Home from "./components/home/Home";
+import RootLayout from "./RootLayouts/layout";
+import About from "./pages/about page/about";
 import GetTouch from "./pages/getInTouch/GetTouch";
-import AbouT from "./pages/about page/about";
-import ProvenansE from "./pages/provenanse/provenanse";
+import Provenanse from "./pages/provenanse/provenanse";
+import YummyPage from "./pages/yummyPage/yummyPage";
+
 
 function App() {
-  return(
+  const router = createBrowserRouter(createRoutesFromElements(
+    <Route element={<RootLayout />}>
+      <Route index element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="getTouch" element={<GetTouch />} />
+      <Route path="provenanse" element={<Provenanse />} />
+      <Route path="yummypage" element={<YummyPage />} />
+    </Route>
+  ));
+
+  return (
     <div className="App">
-    <Navbar />
-
-    <Routes>
-      <Route path="/" element={<Home />}></Route>
-      <Route path="/YummyPage" element={<YummyPage />}></Route>
-      <Route path="/AbouT" element={<AbouT />}></Route>
-      <Route path="/GetTouch" element={<GetTouch />}></Route>
-      <Route path="/ProvenansE" element={<ProvenansE />}></Route>
-    </Routes>
-
-    <Footer />
-  </div>
-  )
+      <RouterProvider router={router} />
+    </div>
+  );
 }
+
 export default App;

@@ -7,3 +7,31 @@
 a:active{
     color: #E99A3F;
 }
+
+/* Slider */
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.sliderWrapper {
+    padding-bottom: 130px;
+}
+
+.sliderWrapper .slick-next {
+    position: absolute;
+    right: -6px;
+    z-index: 1;
+}
+
+.sliderWrapper .slick-arrow::before {
+    color: silver;
+    font-size: 30px;
+}
+
+.sliderWrapper .slick-prev {
+    z-index: 1;
+} 

@@ -1,8 +1,11 @@
 import React from 'react'
+import { NavbarCard } from '../../components/assets/cards/Cards'
 
 function GetTouch() {
   return (
-    <div>GetTouch</div>
+    <div>
+      <NavbarCard/>
+    </div>
   )
 }
 
