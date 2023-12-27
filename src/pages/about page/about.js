@@ -1,10 +1,11 @@
 import React from 'react'
-import { List, NavbarCard } from '../../components/assets/cards/Cards'
+import { NavbarCard } from '../../components/assets/cards/Cards'
 import style from './about.module.css'
 import human1 from './img/human4.png'
 import human2 from './img/human1.png'
 import human3 from './img/human2.png'
 import human4 from './img/human3.png'
+import Lists from '../../components/assets/lists/Lists'
 
 function About() {
   return (
@@ -76,9 +77,8 @@ function About() {
               </h4>
             </div>
           </div>
-
         </div>
-        <List/>
+        <Lists/>
       </div>
 
 

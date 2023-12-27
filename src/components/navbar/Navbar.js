@@ -6,10 +6,10 @@ import img from './img/navbarlogo.png'
 function Navbar() {
   return (
     <div className={style.navbar}>
-      <Link to={'/'}><img src={img} alt="" /></Link>
+      <Link to='/'><img src={img} alt="" /></Link>
       <div className={style.navbarText}>
         <div className={style.text1}>
-          <NavLink to='yummypage'><h2>Yummy Pies</h2></NavLink>
+          <NavLink><h2>Yummy Pies</h2></NavLink>
           <NavLink to='about'><h2>A Bit About Us</h2></NavLink>
         </div>
         <div className={style.text1}>

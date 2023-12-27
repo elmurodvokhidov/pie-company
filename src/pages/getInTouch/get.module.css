@@ -1,0 +1,39 @@
+.get{
+    display: flex;
+    width: 100%;
+    height: 1150px;
+    background-color: black;
+}
+
+.getTouch h1{
+    padding: 0 0 10px 170px;
+    font-size: 43px;
+    font-weight: 800;
+    color: white;
+}
+.getTouch h3{
+    color: #E99A41;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 0 0 10px 170px;
+}
+
+.getTouch h4{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0 0 40px 170px;
+}
+
+.getTouch h6{
+    color: #E99A41;
+    font-size: 17px;
+    padding: 0 0 20px 170px;
+}
+
+.getTouch h2{
+    color: white;
+    font-size: 17px;
+    font-weight: 800;
+    padding: 0 0 10px 170px;
+}

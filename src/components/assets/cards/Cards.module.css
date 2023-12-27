@@ -50,6 +50,13 @@
     color: white;
 };
 
-h1{
-    background-color: rgba(251, 105, 1, 0.752);
+
+
+
+.list1 h2{
+    color: #E99A41;
+}
+
+.list1 h4{
+    color: white;
 }

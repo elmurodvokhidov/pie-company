@@ -1,5 +1,4 @@
 import React from 'react'
-
 import style from './Cards.module.css'
 import img1 from './img/trust-1.png'
 import img2 from './img/trust-2.png'
@@ -66,7 +65,7 @@ function Cards() {
 
 export default Cards
 
-
+// Navbar cards
 export function NavbarCard() {
   return (
     <div style={{ width: '100%', height: '550px', background: 'rgba(251, 105, 1, 0.752)', }} className={style.NavbarCard}>
@@ -84,17 +83,3 @@ export function NavbarCard() {
     </div>
   )
 };
-
-
-export function List() {
-  return (
-    <div className={style.list1}>
-      <h2>Our pies are full to the <br />
-        crust!
-      </h2>
-      <h4>Apparently size really does matter <br />
-        Standard Pie: 280g - Family Sized Pie: 1850g
-      </h4>
-    </div>
-  )
-}
