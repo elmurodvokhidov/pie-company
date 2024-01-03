@@ -25,3 +25,7 @@
 .text1 h2{
     color: white;
 }
+
+.slider{
+    display: flex;
+}
